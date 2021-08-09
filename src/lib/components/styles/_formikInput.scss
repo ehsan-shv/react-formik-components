@@ -1,0 +1,52 @@
+.c-input {
+  &.isRtl {
+    direction: rtl;
+    text-align: right;
+  }
+  &__field,
+  &__label,
+  &__message {
+    font-size: var(--react-formik-components-font-size);
+  }
+
+  &__field,
+  &__label {
+    color: var(--react-formik-components-color);
+  }
+
+  &__field {
+    background-color: var(--react-formik-components-color-white);
+    border: 1px solid var(--react-formik-components-border-color);
+    border-radius: var(--react-formik-components-border-radius);
+    margin: var(--react-formik-components-input-margin-y);
+    height: var(--react-formik-components-input-height);
+    background-color: var(--react-formik-components-color-white);
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: var(--react-formik-components-color);
+    }
+  }
+
+  &__message {
+    color: var(--react-formik-components-error-color);
+  }
+
+  &.error {
+    .c-input__field {
+      border-color: var(--react-formik-components-error-color);
+    }
+  }
+
+  textarea {
+    height: var(--react-formik-components-input-textarea-height);
+  }
+}

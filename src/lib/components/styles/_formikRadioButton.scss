@@ -1,0 +1,64 @@
+.c-radioButton {
+  font-size: var(--react-formik-components-font-size);
+  &.inline {
+    display: inline-flex;
+    margin-right: var(--react-formik-components-inline-margin-x);
+  }
+
+  &.isRtl {
+    direction: rtl;
+    text-align: right;
+
+    .c-radioButton {
+      &.inline {
+        margin-right: 0;
+        margin-left: var(--react-formik-components-inline-margin-x);
+      }
+      &__label {
+        padding-left: 0;
+        padding-right: var(--react-formik-components-label-padding-x-start);
+
+        &::before {
+          left: unset;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__field {
+    display: none;
+
+    &:checked + label {
+      &::before {
+        background-image: var(
+          --react-formik-components-radio-label-background-image
+        );
+      }
+    }
+  }
+  &__label {
+    position: relative;
+    padding-left: var(--react-formik-components-label-padding-x-start);
+    cursor: pointer;
+    user-select: none;
+    color: var(--react-formik-components-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: var(--react-formik-components-label-before-position-y-start);
+      left: var(--react-formik-components-label-before-position-x-start);
+      width: var(--react-formik-components-label-width);
+      height: var(--react-formik-components-label-height);
+      border: 1px solid var(--react-formik-components-border-color);
+      background-color: var(--react-formik-components-color-white);
+      background-size: var(
+        --react-formik-components-radio-label-background-size
+      );
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 100%;
+    }
+  }
+}
