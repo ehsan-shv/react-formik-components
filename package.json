@@ -8,7 +8,7 @@
     "yup",
     "validation"
   ],
-  "version": "1.0.6",
+  "version": "1.0.8",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",

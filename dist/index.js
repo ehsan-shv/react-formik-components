@@ -36,4 +36,6 @@ var _formikRadioButton = _interopRequireDefault(require("./components/formikRadi
 
 var _formikSelect = _interopRequireDefault(require("./components/formikSelect"));
 
+require("./components/styles/main.scss");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

@@ -11,8 +11,6 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 
 var _reactSelect = _interopRequireDefault(require("react-select"));
 
-require("./styles/_formikSelect.scss");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 const FormikSelect = (_ref) => {
