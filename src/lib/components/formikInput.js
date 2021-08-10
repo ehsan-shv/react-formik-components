@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './formikInput.scss'
+import './styles/formikInput.scss'
 const FormikInput = ({ field, form, type, label, isRtl, ...props }) => {
   const { name } = field
 

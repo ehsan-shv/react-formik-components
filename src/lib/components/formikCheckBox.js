@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './formikCheckBox.scss'
+import './styles/formikCheckBox.scss'
 const FormikCheckBox = ({ name, id, label, arrayHelpers, inline, isRtl }) => {
   const { form, name: itemsGroupName } = arrayHelpers
 
