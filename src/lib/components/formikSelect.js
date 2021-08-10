@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Select from 'react-select'
-import './styles/formikSelect.scss'
+import './styles/_formikSelect.scss'
 
 const FormikSelect = ({
   name,

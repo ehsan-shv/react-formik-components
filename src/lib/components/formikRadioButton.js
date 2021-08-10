@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './styles/formikRadioButton.scss'
+import './styles/_formikRadioButton.scss'
 
 const FormikRadioButton = ({
   id,
