@@ -48,22 +48,16 @@ const FormikSelect = (_ref) => {
     pageSize,
     tabIndex,
     tabSelectsValue,
-    touched
+    touched,
+    onChange,
+    onBlur
   } = _ref;
 
   const handleChange = value => {
-    const {
-      onChange,
-      name
-    } = (void 0).props;
     onChange(name, value);
   };
 
   const handleBlur = () => {
-    const {
-      onBlur,
-      name
-    } = (void 0).props;
     onBlur(name, true);
   };
 

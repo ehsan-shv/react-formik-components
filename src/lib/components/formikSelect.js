@@ -37,14 +37,14 @@ const FormikSelect = ({
   tabIndex,
   tabSelectsValue,
   touched,
+  onChange,
+  onBlur,
 }) => {
   const handleChange = (value) => {
-    const { onChange, name } = this.props
     onChange(name, value)
   }
 
   const handleBlur = () => {
-    const { onBlur, name } = this.props
     onBlur(name, true)
   }
 
