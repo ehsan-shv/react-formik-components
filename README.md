@@ -34,7 +34,7 @@ React reusable and customizable input components based on [formik](https://formi
 
     import { Formik, Form, Field } from 'formik'
     import * as Yup from 'yup'
-    import  {  FormikInput  }  from  'react-formik-components'
+    import { FormikInput } from 'react-formik-components'
 
     const formSchema = Yup.object().shape({
       username: Yup.string().required('Username Required'),
@@ -54,18 +54,19 @@ React reusable and customizable input components based on [formik](https://formi
               username: '',
               password: '',
               message: '',
-              number: undefined,
+              count: '',
             }}
             initialStatus={{
               username: '',
               password: '',
               message: '',
-              number: '',
+              count: '',
             }}
             validationSchema={formSchema}
             onSubmit={(values, actions) => {
               console.log(values)
-              actions.setStatus({ //set status })
+              //set status
+              actions.setStatus({})
             }}
           >
             {() => (
@@ -98,9 +99,7 @@ React reusable and customizable input components based on [formik](https://formi
                   type="textarea"
                   component={FormikInput}
                 />
-                <button type="submit">
-                  Submit
-                </button>
+                <button type="submit">Submit</button>
               </Form>
             )}
           </Formik>
@@ -171,7 +170,8 @@ React reusable and customizable input components based on [formik](https://formi
             validationSchema={FormSchema}
             onSubmit={(values, actions) => {
               console.log(values)
-              actions.setStatus({ //set status })
+              //set status
+              actions.setStatus({ })
             }}
           >
             {({
@@ -240,7 +240,8 @@ React reusable and customizable input components based on [formik](https://formi
             }}
             onSubmit={(values, actions) => {
               console.log(values)
-              actions.setStatus({ //set status })
+              //set status
+              actions.setStatus({ })
             }}
           >
             {() => (
@@ -299,7 +300,8 @@ React reusable and customizable input components based on [formik](https://formi
             }}
             onSubmit={(values, actions) => {
               console.log(values)
-              actions.setStatus({ //set status })
+              //set status
+              actions.setStatus({ })
             }}
           >
             {() => (
@@ -307,7 +309,7 @@ React reusable and customizable input components based on [formik](https://formi
                 <FieldArray
                   name={position.name}
                   render={(arrayHelpers) =>
-                    radio.items.map((item, index) => {
+                    position.items.map((item, index) => {
                       return (
                         <Field
                           key={`${item}-${index}`}
