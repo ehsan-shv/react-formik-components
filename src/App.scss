@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  font-family: 'Roboto', sans-serif;
+  margin: 48px 15%;
+
+  form > *:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  button {
+    height: 40px;
+    padding: 0 20px;
+    background-color: transparent;
+    border: 1px solid #212121;
+    background-color: #212121;
+    cursor: pointer;
+    color: #ffffff;
+  }
+}
